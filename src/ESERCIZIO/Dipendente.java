@@ -2,7 +2,7 @@ package ESERCIZIO;
 
 
 
-public  abstract class Dipendente {
+public  abstract class Dipendente implements CheckIn {
 
     private String matricola;
     private  double stipendio;
@@ -38,5 +38,9 @@ public  abstract class Dipendente {
                 ", stipendio = " + calculateSalary() +
                 ", dipartimento = " + dipartimento +
                 '}';
+    }
+    @Override
+    public void checkIn() {
+        System.out.println("Dipendente " + getMatricola() + " ha iniziato il turno.");
     }
 }
