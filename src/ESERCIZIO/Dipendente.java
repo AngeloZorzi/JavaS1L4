@@ -2,10 +2,10 @@ package ESERCIZIO;
 
 
 
-public class Dipendente {
+public  abstract class Dipendente {
 
     private String matricola;
-    private double stipendio;
+    private  double stipendio;
     private Dipartimento dipartimento;
 
     public Dipendente(String matricola, double stipendio, Dipartimento dipartimento) {
@@ -28,5 +28,15 @@ public class Dipendente {
 
     public void setDipartimento(Dipartimento dipartimento) {
         this.dipartimento = dipartimento;
+    }
+    public abstract double calculateSalary();
+
+    @Override
+    public String toString() {
+        return "Dipendente {" +
+                "matricola = '" + matricola + '\'' +
+                ", stipendio = " + calculateSalary() +
+                ", dipartimento = " + dipartimento +
+                '}';
     }
 }
