@@ -8,7 +8,7 @@ public class Main {
 
         Dipendente[] dipendenti = {f1, p1, d1};
         Volontario v1 = new Volontario("Gatto Silvestro", 28, "CV breve");
-        Volontario v2 = new Volontario("TOPO GIGIO", 60, "Studente universitaria");
+        Volontario v2 = new Volontario("TOPO GIGIO", 60, "Grande conduttore televiso");
 
         CheckIn[] persone = {f1, p1, d1, v1, v2};
 
